@@ -3,21 +3,22 @@
 
 #include "time.h"
 
-#include <string>
+#include <QTime>
+#include <QString>
 
 class Nakki
 {
 public:
     Nakki();
-    Nakki(std::string name, Time start, Time end);
+    Nakki(QString name, QTime start, QTime end);
 
     ~Nakki();
 
 private:
-    std::string name_;
+    QString name_;
 
-    Time start_;
-    Time end_;
+    QTime start_;
+    QTime end_;
 };
 
 #endif // NAKKI_H

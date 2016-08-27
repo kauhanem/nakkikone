@@ -13,19 +13,19 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
     event.cpp \
     nakki.cpp \
-    time.cpp \
-    nakkiworker.cpp
+    nakkiworker.cpp \
+    mainwindow.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
     event.h \
     nakki.h \
-    time.h \
-    nakkiworker.h
+    nakkiworker.h \
+    mainwindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    mainwindow.ui
 
 RESOURCES += \
     files.qrc

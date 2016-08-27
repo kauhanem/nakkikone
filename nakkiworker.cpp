@@ -5,13 +5,13 @@ Nakkiworker::Nakkiworker()
 
 }
 
-Nakkiworker::Nakkiworker(std::__cxx11::string name) :
+Nakkiworker::Nakkiworker(QString name) :
     name_(name)
 {
 
 }
 
-std::string Nakkiworker::giveName()
+QString Nakkiworker::giveName()
 {
     return name_;
 }

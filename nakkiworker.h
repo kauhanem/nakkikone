@@ -1,21 +1,21 @@
 #ifndef NAKKIWORKER_H
 #define NAKKIWORKER_H
 
-#include <string>
+#include <QString>
 
 class Nakkiworker
 {
 public:
     Nakkiworker();
 
-    Nakkiworker(std::string name);
+    Nakkiworker(QString name);
 
     ~Nakkiworker();
 
-    std::string giveName();
+    QString giveName();
 
 private:
-    std::string name_;
+    QString name_;
 };
 
 #endif // NAKKIWORKER_H

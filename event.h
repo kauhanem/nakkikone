@@ -2,35 +2,34 @@
 #define EVENT_H
 
 #include "nakki.h"
-#include "time.h"
 
-#include <string>
-#include <vector>
+#include <QTime>
+#include <QString>
+#include <QVector>
 
 class Event
 {
 public:
     Event();
 
-    Event(std::string name, int year, Time start, Time end);
+    Event(QString name, int year, QTime start, QTime end);
 
     ~Event();
 
-    std::string giveName();
+    QString giveName();
 
     void addNakki();
 
 
-
 private:
-    std::string name_;
+    QString name_;
 
     int year_;
 
-    Time start_;
-    Time end_;
+    QTime start_;
+    QTime end_;
 
-    std::vector<Nakki*> nakkiList_;
+    QVector<Nakki*> nakkiList_;
 };
 
 #endif // EVENT_H

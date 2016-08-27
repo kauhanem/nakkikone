@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>720</width>
-    <height>480</height>
+    <height>475</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,22 +17,185 @@
    <locale language="English" country="Finland"/>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QScrollBar" name="verticalScrollBar">
-    <property name="geometry">
-     <rect>
-      <x>700</x>
-      <y>0</y>
-      <width>16</width>
-      <height>481</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="eventNameLineEdit">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>12</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Tapahtuman nimi</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="eventYearLineEdit">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string extracomment="Vuosi"/>
+      </property>
+      <property name="placeholderText">
+       <string>Vuosi</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="eventPlaceLineEdit">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Paikka</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTimeEdit" name="eventEndTimeEdit">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTimeEdit" name="eventStartTimeEdit">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="createEvent">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Luo</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>eventNameLineEdit</tabstop>
+  <tabstop>eventYearLineEdit</tabstop>
+  <tabstop>eventPlaceLineEdit</tabstop>
+  <tabstop>eventStartTimeEdit</tabstop>
+  <tabstop>eventEndTimeEdit</tabstop>
+  <tabstop>createEvent</tabstop>
+ </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>createEvent</sender>
+   <signal>clicked()</signal>
+   <receiver>eventNameLineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>417</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createEvent</sender>
+   <signal>clicked()</signal>
+   <receiver>eventYearLineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>291</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createEvent</sender>
+   <signal>clicked()</signal>
+   <receiver>eventPlaceLineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>426</x>
+     <y>407</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>416</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createEvent</sender>
+   <signal>clicked()</signal>
+   <receiver>eventEndTimeEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>474</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createEvent</sender>
+   <signal>clicked()</signal>
+   <receiver>eventStartTimeEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>214</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

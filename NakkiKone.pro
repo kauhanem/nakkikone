@@ -13,8 +13,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    event.cpp \
+    nakki.cpp \
+    date.cpp  \
+    time.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    event.h \
+    nakki.h \
+    date.h  \
+    time.h
 
 FORMS    += mainwindow.ui

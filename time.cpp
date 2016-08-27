@@ -16,3 +16,8 @@ Time::Time(int hours, int minutes) :
 {
 
 }
+
+Time::~Time()
+{
+
+}

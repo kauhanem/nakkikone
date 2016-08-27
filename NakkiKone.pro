@@ -16,13 +16,16 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     event.cpp \
     nakki.cpp \
-    date.cpp  \
-    time.cpp
+    time.cpp \
+    nakkiworker.cpp
 
 HEADERS  += mainwindow.h \
     event.h \
     nakki.h \
-    date.h  \
-    time.h
+    time.h \
+    nakkiworker.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    files.qrc

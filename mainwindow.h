@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <fstream>
+
+extern std::fstream testifilu;
 
 namespace Ui {
 class MainWindow;

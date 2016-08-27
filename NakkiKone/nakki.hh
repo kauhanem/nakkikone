@@ -1,7 +1,5 @@
-#ifndef NAKKI_H
-#define NAKKI_H
-
-#include "time.h"
+#ifndef NAKKI_HH
+#define NAKKI_HH
 
 #include <QTime>
 #include <QString>

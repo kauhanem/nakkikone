@@ -1,12 +1,12 @@
-#include "event.h"
+#include "event.hh"
 
 Event::Event()
 {
 
 }
 
-Event::Event(QString name, int year, QTime start, QTime end) :
-    name_(name), year_(year), start_(start), end_(end)
+Event::Event(QString name, QDate date, QTime start, QTime end) :
+    name_(name), date_(date), start_(start), end_(end)
 {
 
 }

@@ -1,4 +1,4 @@
-#include "nakkiworker.h"
+#include "nakkiworker.hh"
 
 Nakkiworker::Nakkiworker()
 {

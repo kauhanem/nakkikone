@@ -1,5 +1,5 @@
-#ifndef NAKKIWORKER_H
-#define NAKKIWORKER_H
+#ifndef NAKKIWORKER_HH
+#define NAKKIWORKER_HH
 
 #include <QString>
 
@@ -18,4 +18,4 @@ private:
     QString name_;
 };
 
-#endif // NAKKIWORKER_H
+#endif // NAKKIWORKER_HH

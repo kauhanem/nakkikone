@@ -1,10 +1,10 @@
-#include "mainwindow.h"
+#include "nakkikone.hh"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+    NakkiKone w;
     w.show();
 
     return a.exec();

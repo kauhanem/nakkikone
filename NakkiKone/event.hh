@@ -1,9 +1,10 @@
-#ifndef EVENT_H
-#define EVENT_H
+#ifndef EVENT_HH
+#define EVENT_HH
 
-#include "nakki.h"
+#include "nakki.hh"
 
 #include <QTime>
+#include <QDate>
 #include <QString>
 #include <QVector>
 
@@ -12,7 +13,7 @@ class Event
 public:
     Event();
 
-    Event(QString name, int year, QTime start, QTime end);
+    Event(QString name, QDate date, QTime start, QTime end);
 
     ~Event();
 
@@ -24,7 +25,7 @@ public:
 private:
     QString name_;
 
-    int year_;
+    QDate date_;
 
     QTime start_;
     QTime end_;
